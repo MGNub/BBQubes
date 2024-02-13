@@ -26,5 +26,5 @@ button.addEventListener('click', function() {
 })
 
 homeBtn.addEventListener('click', function() {
-    window.location.href = "https://tunarufus-pigmentdonor.codio.io/Contest/index.html";
+    window.location.href = "https://mgnub.github.io/BBQubes/index.html";
 })
