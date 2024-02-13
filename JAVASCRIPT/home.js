@@ -8,7 +8,7 @@ const exploreText = document.getElementById('exploreText');
 explore.addEventListener('click', function() {
 
     if(expandBtn.classList.contains('expand')) {
-        window.location.href = "https://tunarufus-pigmentdonor.codio.io/Contest/HTML/howSolve.html";
+        window.location.href = "https://mgnub.github.io/BBQubes/HTML/howSolve.html";
     }
     else {
         expandBtn.classList.add('expand');
