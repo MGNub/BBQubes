@@ -1,0 +1,207 @@
+:root {
+    font-size : 16px;
+}
+
+body {
+    /* background : linear-gradient(135deg, lightyellow, yellow, orange, orangered); */
+    background : linear-gradient(135deg, black 40%, green, rgb(208, 240, 0));
+    height : 100vh;
+    width : 100vw;
+    overflow : hidden;
+}
+
+div {
+    color : white;
+}
+
+/*Header*/
+#header {
+    display : flex;
+    align-items : center;
+    height : 10vh;
+    width : 100vw;
+    flex-wrap : wrap;
+}
+
+#logo {
+    height : 50px;
+}
+
+h1 {
+    margin-left : 12px;
+    font-size : 2.3rem;
+}
+
+#header div {
+    flex : 1;
+    display : flex;
+    justify-content : right;
+}
+
+#menuBtn {
+    height : 45px;
+    margin-right : 3rem;
+    cursor : pointer;
+    z-index : 1;
+    transition : all 0.5s ease-in-out;
+}
+
+.btnClicked {
+    transform : scaleY(20%) rotate(90deg);
+    background-color : white;
+}
+
+#menu {
+    position : absolute;
+    background-color : rgba(0, 0, 0, 0.8);
+    top : 0;
+    left : 0;
+    height : 100vh;
+    width : 100vw;
+    transition : all 0.8s ease-in-out;
+
+    display : flex;
+    flex-direction : column;
+    align-items : center;
+    justify-content : center;
+}
+
+.noDisplay {
+    opacity : 0;
+    z-index : -1;
+}
+
+
+#menu ul{
+    font-size : 1.8rem;
+}
+/*content*/
+
+#page {
+    position : relative;
+    top : 10vh;
+    height : 90vh;
+    /* background-color : green; */
+    display : flex;
+    align-items : center;
+    justify-content : center;
+    gap : 10rem;
+}
+
+#cube {
+    height : 500px;
+}
+
+#text {
+    display : flex;
+    flex-direction : column;
+    width : 500px;
+    font-size : 1.5rem;
+}
+
+#text h2 {
+    margin : 0;
+}
+
+#btnContainer {
+    display : flex;
+    justify-content : flex-start;
+    align-items : center;
+}
+
+#expandBtn {
+    position : absolute;
+    border-radius : 40px;
+    font-weight : bolder;
+    font-size : 1.5rem;
+    width : 50px;
+    height : 50px;
+    background : linear-gradient(to right, rgb(255, 224, 229), rgb(181, 116, 255), rgb(111, 21, 255) 80%);
+    transition : all 1s ease-in-out;
+    border : none;
+    margin-left : 6rem;
+}
+
+.expand {
+    transform : scaleX(4400%) scaleY(4400%) translateX(-10%);
+}
+
+.initialBtn {
+    background : linear-gradient(to right, rgb(224, 228, 0), rgb(214, 111, 0), rgb(223, 140, 16), rgb(224, 228, 0) 95%);
+}
+
+.newBtn {
+    background : linear-gradient(to right, rgb(255, 173, 248), rgb(132, 247, 255), rgb(80, 176, 255), rgb(21, 76, 255) 95%);
+}
+
+#explore {
+    padding: 20px 100px 20px 100px;
+    border-radius : 40px;
+    border : solid 4px rgb(243, 255, 178);
+    font-weight : bolder;
+    box-shadow : 0px 3px 8px rgb(181, 201, 2);
+    cursor : pointer;
+    transition : all 0.4s ease-in-out;
+    background-size: 200% 100%;
+    font-size : 1.5rem;
+    width : fit-content;
+    z-index : 1;
+}
+
+#explore:hover {
+    background-position : 100% 0;
+}
+
+#text button p {
+  padding : 0;
+  margin : 0;
+  height : fit-content;
+  width : fit-content;
+  font-weight : 600;
+  color : rgb(72, 29, 0);
+}
+
+#text button:hover p {
+  animation : btn 0.7s;
+}
+
+@keyframes btn {
+  0% {
+    transform : translateY(0)
+  }
+  33% {
+    color : red;
+  }
+  40% {
+    transform : translateY(-100%);
+    opacity : 0;
+    color : red;
+  }
+  45% {
+    transform : translateY(100%);
+    opacity : 0;
+  }
+}
+
+/*Hidden Page*/
+#hiddenPage {
+    position : absolute;
+    top : 10vh;
+    height : 90vh;
+    width : 100vw;
+
+    display : flex;
+    justify-content : center;
+    align-items : center;
+    gap : 10rem;
+}
+
+#hiddenPage div {
+    width : 500px;
+    font-size : 1.5rem;
+    margin-top : -4rem;
+}
+
+#hiddenPage div h2{
+    margin : 0;
+}

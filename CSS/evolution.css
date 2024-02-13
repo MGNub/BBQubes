@@ -1,0 +1,199 @@
+body {
+    background-color : rgb(20, 20, 20);
+    overflow-y : hidden;
+    display : flex;
+    justify-content : center;
+}
+
+div {
+    font-size : 1.3rem;
+}
+
+#slider {
+    position : absolute;
+    top : 10vh;
+    left : 0;
+    height : 90vh;
+    width : 200vw;
+    /* background : red; */
+
+    display : flex;
+}
+
+#page1 {
+    /* background-color : green; */
+    height : 100%;
+    width : 100vw;
+
+    display : flex;
+    justify-content : center;
+    align-items : center;
+    gap : 5rem;
+}
+
+#page1 div {
+    /* background-color : green; */
+    width : 600px;
+}
+
+#page1 img {
+    height : 400px;
+}
+
+#page2 {
+    /* background-color : green; */
+    height : 100%;
+    width : 100vw;
+
+    display : flex;
+    justify-content : center;
+    align-items : center;
+    gap : 3rem;
+}
+
+#page2 div {
+    /* background-color : green; */
+    width : 600px;
+}
+
+#page2 img {
+    height : 400px;
+}
+
+/* arrow */
+
+#bottomFade {
+  background : linear-gradient(to top, black, transparent);
+  width : 100vw;
+  position : fixed;
+  bottom : 0;
+  left : 0;
+  display : flex;
+  justify-content : center;
+  pointer-events : none;
+}
+
+#dragText {
+  position : absolute;
+  color : white;
+  font-size : 2.5rem;
+  bottom : 1.7rem;
+  transform : scaleX(100%) scaleY(100%);
+  animation : drag 1.8s;
+  opacity : 1;
+}
+
+.fade-out {
+  transition: color 0.5s ease-out;
+}
+
+@keyframes drag{
+  0% {
+    transform : scaleX(1%) scaleY(1%);
+  }
+  70%{
+    transform : scaleX(1%) scaleY(1%);
+  }
+  100% {
+    transform : scaleX(100%) scaleY(100%);
+  }
+}
+
+#arrow {
+  display : flex;
+  align-items : center;
+  position : absolute;
+  top : 85vh;
+  animation : arrow 1.5s;
+}
+
+@keyframes arrow {
+  0% {
+    opacity : 0;
+    transform : translateY(-50%);
+  }
+  50% {
+    transform : translateY(-50%);
+    opacity : 1;
+  }
+}
+
+#crystal {
+  animation : crystal 2s;
+}
+
+@keyframes crystal {
+  0% {
+    transform : translateY(-50%);
+  }
+  50% {
+    transform : translateY(-50%);
+  }
+}
+
+#arrow1 {
+  height : 30px;
+  margin-right : 10px;
+  animation : leftArrow 1s;
+}
+
+#arrow2 {
+  height : 30px;
+  transform : rotate(180deg);
+  margin-left : 10px;
+  animation : rightArrow 1s;
+}
+
+@keyframes leftArrow {
+  0% {
+    opacity : 0;
+    transform : translateX(500px);
+  }
+  25%{
+    opacity : 0;
+  }
+  100% {
+    opacity : 1;
+    transform : translateX(0%);
+  }
+}
+
+@keyframes rightArrow {
+  0% {
+    opacity : 0;
+    transform : translateX(-500px) rotate(180deg);
+  }
+  25%{
+    opacity : 0;
+  }
+  100% {
+    opacity : 1;
+    transform : translateX(0%) rotate(180deg);
+  }
+}
+
+
+.line {
+  width : 30vw;
+  stroke-dasharray : 308;
+  animation : 1.4s fillSvg linear;
+  opacity : 1;
+}
+
+.line1 {
+  transform : rotate(180deg);
+}
+
+@keyframes fillSvg {
+  0%{
+    stroke-dashoffset : 308;
+    opacity : 0;
+  }
+  60% {
+    stroke-dashoffset : 308;
+  }
+  100% {
+    stroke-dashoffset : 0;
+    opacity : 1;
+  }
+}

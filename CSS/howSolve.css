@@ -1,0 +1,83 @@
+body {
+    background-color : black;
+    overflow-x : hidden;
+}
+
+#BBQ {
+    transition : all 0.3s ease-in-out;
+    margin : 0;
+}
+
+.shrink {
+    transform : translateX(-30%);
+    opacity : 0;
+}
+
+/* Top Page */
+video {
+    position : fixed;
+    top : 0;
+    left : 0;
+    height : 100vh;
+    width : 100vw;
+    object-fit : cover;
+    filter : opacity(0.7);
+    z-index : -1;
+}
+
+#topPage {
+    position : fixed;
+    background-color : transparent;
+    top : 0;
+    left : 0;
+    width : 100vw;
+    height : 100vh;
+
+    display : flex;
+    justify-content : center;
+    align-items : center;
+}
+
+#topText {
+    position : relative;
+    height : 50%;
+    width : 50rem;
+    font-size : 1.5rem;
+}
+
+#page {
+    background-color : rgba(10, 10 , 10, 0.9);
+    position : absolute;
+    top : 100vh;
+    left : 0;
+    height : fit-content;
+    padding : 10rem 0 10rem 0;
+    width : 100vw;
+    z-index : 10;
+
+    display : flex;
+    justify-content : center;
+    align-items : center;
+    flex-direction : column;
+}
+
+#solve3 {
+    width : 60rem;
+    height : 34rem;
+    margin-top : 5rem;
+}
+
+#threeX {
+    font-size : 1.4rem;
+    display : flex;
+    flex-direction : column;
+
+    align-items : center;
+}
+
+#guideContainer {
+    display : flex;
+    flex-direction : column;
+    margin-top : 5rem;
+    gap : 5rem;
+}

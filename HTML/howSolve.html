@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../CSS/howSolve.css">
+    <link rel="stylesheet" href="../CSS/universal.css">
+</head>
+<body>
+
+    <div id = "header">
+        <a href = "https://tunarufus-pigmentdonor.codio.io/Contest/index.html" id = "title" draggable = "false"><img id = "logo" src="https://image.winudf.com/v2/image/Y29tLm1vYmluYXZlbC5ydWJpa19pY29uXzE1MTIxMzQxMDZfMDg1/icon.png?w=&fakeurl=1" alt="" draggable = "false"><p id = "BBQ">BB Cubes</p></a>
+
+        <div>
+            <img id = "menuBtn" src = "../Images/menu-line.png" draggable = "false">
+        </div>
+    </div>
+
+    <div id = "topPage">
+        
+        <div id = "topText">
+            <h1>How to Solve a Cube</h1>
+            <p>Ever wondered how to solve a cube? Or you've tried solving it only to end up solving one side? Well, look no further than this page!</p>
+        </div>
+
+    </div>
+
+
+    <!-- INTERACTIVE MENU -->
+    <div id = "menu" class = "noDisplay">
+
+        <img id = "homeBtn" src = "https://cdn.icon-icons.com/icons2/2248/PNG/512/home_circle_icon_137496.png" draggable = "false">
+        <a class = "menuLink" href = "https://tunarufus-pigmentdonor.codio.io/Contest/HTML/howSolve.html">Learn to Solve a Cube</a>
+        <a class = "menuLink" href = "https://tunarufus-pigmentdonor.codio.io/Contest/HTML/evolution.html">Evolution of Speedcubing</a>
+        <a class = "menuLink" href = "https://www.youtube.com/watch?v=xvFZjo5PgG0">Credits</a>
+
+    </div>
+
+
+    <video muted autoplay loop>
+        <source src = "../Videos/cubes.mp4" type = 'video/mp4'>
+    </video>
+
+    <div id = "page">
+
+        <h1>How to solve a 3x3 rubik's cube using beginner's method (Layer by Layer)</h1>
+
+        <div id = "threeX">
+            <iframe id = "solve3" src="https://www.youtube.com/embed/7Ron6MN45LY" title="YouTube video player" frameborder="0" allow="picture-in-picture;" allowfullscreen></iframe>
+
+
+            <div id = "guideContainer">
+
+                <div>
+                    <h3>Step 1 : Solve the White Cross</h3>
+                    <li>Start by picking a white edge piece and place it in the bottom layer so that the white sticker matches the center white sticker on the face.</li>
+                    <li>Look for the corresponding center edge pieces and position them correctly around the white center, forming a white cross on the bottom face.</li>
+                </div>
+
+                <div>
+                    <h3>Step 2: Solve the White Corners</h3>
+                    <li>With the white cross already in place, locate the white corner pieces that belong to the bottom layer.</li>
+                    <li>Align each corner piece with its respective position and orientation, ensuring the white sticker matches the bottom layer's color.</li>
+                </div>
+
+                <div>
+                    <h3>Step 3: Solve the Middle Layer</h3>
+                    <li>Focus on solving the middle layer by matching the edge pieces with the adjacent center pieces.</li>
+                    <li>Find an edge piece with a color matching the center on the left or right side, and use the appropriate moves to place it in the middle layer.</li>
+                </div>
+
+                <div>
+                    <h3>Step 4: Solve the Yellow Cross (OLL - Orientation of the Last Layer)</h3>
+                    <li>Turn the Rubik's Cube upside down (with the solved layers at the bottom).</li>
+                    <li>Aim to create a yellow cross on the top face by orienting the yellow edges correctly. There are different possible patterns you might encounter.</li>
+                </div>
+
+                <div>
+                    <h3>Step 5: Align the Yellow Edges (PLL - Permutation of the Last Layer)</h3>
+                    <li>Check for the arrangement of the yellow corners on the top layer. You will have one of four possible cases.</li>
+                    <li>Use the corresponding algorithms to adjust the yellow edges' positions without disturbing the rest of the cube.</li>
+                </div>
+
+                <div>
+                    <h3>Step 6: Solve the Yellow Corners (PLL - Permutation of the Last Layer)</h3>
+                    <li>At this stage, focus on the orientation of the yellow corners on the top layer.</li>
+                    <li>Depending on the orientation of the corners, apply the appropriate algorithm to correctly orient all of them.</li>
+                </div>
+
+                <div>
+                    <h3>Step 7: Finalize the Cube</h3>
+                    <li>Check the whole cube for any remaining incorrect positions or orientations of pieces.</li>
+                    <li>Repeat the required algorithms to solve any last layer issues until you achieve a completely solved Rubik's Cube.</li>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+</body>
+<script src = "../JAVASCRIPT/code.js"></script>
+<script src = "../JAVASCRIPT/howSolve.js"></script>
+</html>
